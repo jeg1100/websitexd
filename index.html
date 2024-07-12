@@ -1,243 +1,44 @@
 <!DOCTYPE html>
-  <head>
-    <meta property="og:title" content="FrostyBoxx Weboldal">
-    <meta property="og:description" content="Egy feltörekvő minecraft és discord szerver">
-    <meta property="og:image" content="https://hypixelfarms.github.io/images/1.jpeg">
-    <title>FrostyBoxx</title>
-  <link rel="icon" type="image/x-icon" href="img/logo.png">
-    <meta content="FrostyBoxx - play.frostyboxx.hu" property="og:title" />
-    <meta
-      content="A friendly minecraft survival server!"
-      property="og:description"
-    />
-    <meta content="https://FrostyBoxx.eu/" property="og:url" />
-    <meta
-      content="https://us-east-1.tixte.net/uploads/person0z.with-your.mom/2022-07-10_22.07.13.png"
-      property="og:image"
-    />
-    <meta content="#0084d1" data-react-helmet="true" name="theme-color" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="stylesheet" href="css/button.css" />
-    <script
-      src="https://kit.fontawesome.com/539f65be00.js"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript">
-      function mobile() {
-        var bars = document.getElementById("mnav");
-        if (bars.className === "mnav") {
-          bars.className += " responsive";
-        } else {
-          bars.className = "mnav";
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fejlesztés alatt</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
         }
-      }
-    </script>
-  </head>
-  <body>
-    <header>
-      <div class="nav">
-        <ul class="nav-items" id="nav-items">
-          <a><li onclick="mobile()" class="icon fa fa-bars fa-2x"></li></a>
-          <a href="#main"
-            ><li class="h">
-              <div class="overlay"></div>
-              Home
-            </li></a
-          >
-          <a href="https://bolt.frostyboxx.hu"
-            ><li class="h">
-              <div class="overlay"></div>
-              MC Bolt
-            </li></a
-          >
-          <div class="log">
-            <img alt="FrostyBoxx Logo" class="logo" src="img/logo.png" />
-          </div>
-          <a href="#games"
-            ><li class="h">
-              <div class="overlay"></div>
-              Info
-            </li></a
-          >
-          <a href="https://discord.gg/frostyboxx"
-            ><li class="h">
-              <div class="overlay"></div>
-              Segítség
-            </li></a
-          >
-        </ul>
-        <div class="mnav" id="mnav">
-          <a href="#main"><li class="i">Home</li></a>
-          <a href="https://bolt.frostyboxx.hu"><li class="i">MC Bolt</li></a>
-          <a href="#games"><li class="i">Info</li></a>
-          <a href="https://discord.gg/frostyboxx"
-            ><li class="i">Segítség</li></a
-          >
-        </div>
-      </div>
-
-      <div class="hero" id="main">
-        <h1><img src="img/text-logo.png" alt="FrostyBoxx" /></h1>
-        <p class="info">
-          Csatlakozz
-          <span class="sip" data-ip="play.frostyboxx.hu" data-port="25565">
-            0</span
-          >
-          emberhez a <span class="ip">play.frostyboxx.hu</span> szerveren!
-        </p>
-        <a
-          href="https://discord.gg/frostyboxx"
-          rel="noreferrer nofollow"
-          target="_blank"
-          class="discordbtn"
-        >
-          <i class="fa-brands fa-discord"></i> Csatlakozz Discordunkhoz!</a
-        >
-      </div>
-    </header>
-    <div class="main">
-      <div id="description">
-        <div>
-          <i class="fa fa-rocket fa-4x"></i>
-          <span>
-            <h3>TÖRTÉNELMÜNK</h3>
-            <p>
-           
-            A FrostyBoxx-t 2022 végén alapították. Ezt a szervert azért
-            indítottuk el, mert szerettünk volna egy közösség által
-            irányított szervert, amelynek a legmagasabb rangja 3 dollárért megvásárolható.
-            
-            </p>
-          </span>
-        </div>
-        <div>
-          <i class="fa fa-user fa-4x"></i>
-          <span>
-            <h3>CSAPATUNK</h3>
-            <p>
-              A FrostyBoxx személyzete itt van <strong>MIATTAD</strong>,
-              és törekszünk arra, hogy a legjobb élményt
-              nyújtsuk neked, a játékosnak. Bátran fordulhatsz
-              hozzánk bármilyen kérdéssel vagy segítségkéréssel!
-            </p>
-          </span>
-        </div>
-        <div>
-          <i class="fa fa-server fa-4x"></i>
-          <span>
-            <h3>SZERVERÜNK</h3>
-            <p>
-              A FrostyBoxx, jelenleg egy fullpvp szerver,
-              olyan dolgokkal rendelkezik, amelyekkel más
-              szerverek nem. Egyedi terep, egyedi tárgyak,
-              varázslatok és még sok más. Próbáld ki!
-              <strong>play.frostyboxx.hu</strong>
-          </span>
-        </div>
-      </div>
-      <div id="games">
-        <h2>FrostyBoxx tulajdonságai</h2>
-        <div class="game e">
-          <div>
-            <h3>Custom Map</h3>
-            <p>
-              Mapunkat egy magyar ember készítette RebelliousBuilder néven.
-              Nagyon egyedi mapokat csinál szóval én azt ajánlom hogy keresétek fel!
-            </p>
-          </div>
-          <img alt="terrain" class="gimg a" src="img/fantasy.png" />
-        </div>
-
-        <hr />
-
-        <div class="game f">
-          <div>
-            <h3>Custom rangok</h3>
-            <p>
-              Saját egyedi rangjaink vannak egyedi funkciókkal pl.:
-              Custom kit a rangokhoz, minecraftban és discordon is fel old dolgokat.
-            </p>
-          </div>
-          <img alt="claiming" class="gimg b" src="img/rangok.png" />
-        </div>
-
-        <hr />
-
-        <div class="game g">
-          <div>
-            <h3>Custom cuccok</h3>
-            <p>
-              Amint meg nyit a szerver kicsivel utána
-              lesznek custom kardok, balták, csákányok
-              és még sok más custom dolog!
-            </p>
-          </div>
-          <img alt="economy" class="gimg c" src="img/kardok.png" />
-        </div>
-        <hr />
-      </div>
-      <div id="staff">
-        <div class="staff">
-          <h2>A csapatunk</h2>
-          <div class="staff-team">
-            <div>
-              <h3>Jeg_kocka</h3>
-              <div class="owner">Tulaj</div>
-              <img alt="MyServer Staff Member" src="img/Jegkocka.png" />
-            </div>
-
-            <div>
-              <h3>cigi_187 (Pendrajv)</h3>
-              <div class="owner">Al-tulaj</div>
-              <img alt="MyServer Staff Member" src="img/steve1.png
-              " />
-            </div>
-
-            <div>
-              <h3>Daniegypro123</h3>
-              <div class="admin">Admin</div>
-              <img alt="F o u r#3345" src="img/steve1.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="announcement">
-        <div class="an-img">
-          <h2>HÍREK ÉS KÖZLEMÉNYEK</h2>
-          <p class="an-t">
-            <b>A FrostyBoxx jövője</b>
-            <br /><br />
-            Mivel hogy jelenleg én (Jeg_kocka) Pendrajv és Dani csináljuk szervert ezézt amint megnyit a szerver lesz
-            <strong>mod TGF!</strong> <br /><br />
-            Örömmel jelentem be, hogy a FrostyBoxx visszatért, és még
-            <strong>sokáig marad!</strong>! <br /><br />
-            <a href="https://discord.gg/frostyboxx" class="btn">Tudj meg többet!</a>
-          </p>
-        </div>
-      </div>
-      <!--
-		<div id="contact">
-			<h2>CONTACT US</h2>
-			<p>Email - <a href="mailto:frostyboxx.hu@gmail.com">frostyboxx.hu@gmail.com</a></p>
-			<p>Discord - <a href="https://discord.gg/frostyboxx">https://discord.gg/frostyboxx</a></p>
-		</div>
--->
-    </div>
-    <footer>
-      <img alt="FrostyBoxx Logo" src="img/text-logo.png" />
-      <p>Copyright &copy; FrostyBoxx 2023-2024</p>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-1.11.2.min.js"
-      type="text/javascript"
-    ></script>
-    <script src="js/main.js" type="text/javascript"></script>
-  </body>
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #7289da;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #5b6eae;
+        }
+    </style>
+</head>
+<body>
+    <h1>A weboldal fejlesztés alatt áll</h1>
+    <p>Addig is gyere be a Discord szerverünkre:</p>
+    <a href="https://discord.gg/frostyboxx" target="_blank">discord.gg/frostyboxx</a>
+</body>
 </html>
